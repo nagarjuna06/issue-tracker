@@ -1,0 +1,57 @@
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.custom-toggle::after {
+  content: none;
+}
+
+.custom-toggle,
+.custom-toggle:focus,
+.custom-toggle:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .CodeMirror,
+.dark-mode .editor-toolbar,
+.dark-mode .EasyMDEContainer .CodeMirror-fullscreen,
+.dark-mode .EasyMDEContainer .editor-toolbar,
+.dark-mode .editor-preview-side,
+.dark-mode .editor-preview-active {
+  background-color: #222;
+  color: #ffffff;
+}
+.dark-mode .CodeMirror-cursor {
+  border-left: 2px solid #fff;
+}
+.dark-mode .editor-toolbar button {
+  color: #ffffff8c;
+}
+.dark-mode .editor-toolbar .active,
+.dark-mode .editor-toolbar button:hover {
+  color: #222;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .text-sm-md {
+    font-size: 16px; /* Normal text for screens >= 768px */
+  }
+}
